@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Hoja de Vida Digital</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+
+		<!-- Header/ Barra de navegacion-->
+		<div class="row sticky-top">
+			<div class="col col-md-12">
+				<header>
+					<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+						<svg width="100" height="100" viewBox="0 0 100 100">
+						   <circle cx="50" cy="50" r="35" stroke="Green" stroke-width="2" fill="none" />
+						   <circle cx="50" cy="50" r="40" stroke="Blue" stroke-width="2" fill="none" />
+						   <text x="24" y="65" fill="none" stroke="White" stroke-width="1" style="font-size: 40px">AY</text>
+						</svg>
+
+						<h1 class="navbar-text d-none d-xl-block">Resumen Curricular </h1>
+
+						<h1 class="navbar-text d-none d-lg-block d-xl-none">Resumen Curricular </h1>
+
+						<h1 class="navbar-text d-none d-md-block d-lg-none">Resumen Curricular </h1>
+
+						<h4 class="navbar-text d-none d-sm-block d-md-none">Resumen Curricular </h4>
+
+						<h5 class="navbar-text d-block d-sm-none">Resumen Curricular </h5>
+
+					  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"></span>
+					 	</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+
+							<li class="nav-item">
+
+								<!-- grande y extra grande-->
+								<button class="btn btn-outline-light d-none d-lg-block d-xl-none d-xl-block mr-3 mx-2 active"><a href="{% url 'index' %}" class="nav-link text-dark">Inicio</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+								<!-- Mediano -->
+								<button class="btn btn-outline-light btn-block d-none .d-none d-md-block d-lg-none active"><a href="{% url 'index' %}" class="nav-link text-dark">Inicio</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+       							<!-- Pequeño y extra pequeño -->
+       							<button class="btn btn-outline-light mr-auto btn-lg btn-block d-block d-sm-none active"><a class="nav-link text-dark" href="{% url 'index' %}">Inicio</a></button>
+
+     						</li>
+
+							<li class="nav-item">
+
+								<!-- grande y extra grande-->
+								<button class="btn btn-outline-light d-none d-lg-block d-xl-none d-xl-block mr-3"><a href="{% url 'educacion' %}" class="nav-link text-light">Educacion</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+								<!-- Mediano -->
+								<button class="btn btn-outline-light btn-block d-none .d-none d-md-block d-lg-none"><a href="{% url 'educacion' %}" class="nav-link text-light">Educacion</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+       							<!-- Pequeño y extra pequeño -->
+       							<button class="btn btn-outline-light mr-auto btn-lg btn-block d-block d-sm-none"><a class="nav-link text-light" href="{% url 'educacion' %}">Educacion</a></button>
+
+     						</li>
+
+     						<li class="nav-item">
+								
+								<!-- grande y extra grande-->
+								<button class="btn btn-outline-light d-none d-lg-block d-xl-none d-xl-block mr-3"><a href="#" class="nav-link text-light">Experiencias</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+								<!-- Mediano -->
+								<button class="btn btn-outline-light btn-block d-none .d-none d-md-block d-lg-none"><a href="#" class="nav-link text-light">Experiencias</a></button>
+
+								<!-- Separador-->
+       							<button class="btn btn-info pr-5 btn-block d-none"><a class="nav-link text-light" href="#"></a></button>
+
+       							<!-- Pequeño y extra pequeño -->
+       							<button class="btn btn-outline-light mr-auto btn-lg btn-block d-block d-sm-none"><a class="nav-link text-light" href="#">Experiencias</a></button>
+
+     						</li>
+
+						    </ul>
+						</div>
+					</nav>
+				</header>
+			</div>
+		</div>
+		
+		<!-- Datos  Personales-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="alert alert-secondary clearfix" role="alert">
+					<h1 class="text-success">Datos Personales.</h1>
+					<div class="col-md-2 float-left">
+						<img src="img/foto_perfil.jpg" class="img-thumbnail" width="250px" height="150px">
+					</div>
+
+					<div class="col-md-10 float-right">
+						<h3><ins>Nombre:</ins> Andres Eduardo de Jesus Yepes Moreno.</h3>
+						<h3><ins>Edad:</ins> 21.</h3>
+						<h3><ins>Fehca de nacimiento:</ins> 03/06/98</h3>
+						<h3><ins>Caracas - Venezuela</ins></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Destreas y Habilidades-->
+		<div class="row">
+			<div class="col md-12">
+				<aside>
+					<div class="card border-primary mx-auto" style="max-width: 1000px;">
+						<h2 class="card-header text-dark">Perfil.</h2>
+						<div class="row no-gutters">
+						
+
+						<div class="col md-12">
+							<div class="card-body">
+								<h5 class="card-title text-success">Destrezas</h5>
+								<p class="card-text">Desde que me enamore de mi carrera he sido muy curioso y entusiasta por aprender más, lo que se hoy en día es fruto de mi esfuerzo constante por aumentar mis conocimientos y destrezas en el área, puedo trabajar bajo estrés de una forma organizada, y esto me ayuda a tener mejor control de las diversas actividades, tengo un buen desempeño en trabajos en equipo por tener una buena comunicación con la gente.</p>
+								<hr>
+								<h5 class="crad-title text-primary">Habilidades</h5>
+								<p class="card-text">Hoy en día gracias a mis esfuerzos, puedo manejar los lenguajes de programación como Python, Php tengo dominio de base de datos, HTML y CSS uso el framework bootstrap para hacer diseños responsive y puedo manejar los sistemas operativos como linux y windows se usar Git para tener un control de versiones en todo lo que hago ya sea prácticas, cursos o proyectos, tengo conocimiento en la parte del hardware y mantenimiento de computadoras ya que me apasiona el ensamblaje de la misma, tengo conocimiento en la edición de video y fotografías en un nivel intermedio.</p>
+								<hr>
+								<h5 class="card-title text-success">Idiomas que manejo:</h5>
+								<ul class="crad-text list-unstyled">
+									<ul>
+										<li>Ingles</li>
+										<li>Español</li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<!--Pie de Pagina-->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-9">
+					<h1>Andres Yepes Moreno</h1>
+				</div>
+
+				<div class="col-md-3">
+					<a href="https://www.facebook.com/andres.yepes.102"><img src="img/facebook.png" width="50" height="50"></a>
+					<a href="https://www.instagram.com/ayepesm567/"><img src="img/instragram.png" width="50" height="50"></a>
+					<a href="#"><img src="img/gmail.png" width="50" height="50"></a>
+					<a href="#"><img src="img/telefono.png" width="50" height="50"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- JavaScripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
